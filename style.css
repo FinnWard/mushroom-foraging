@@ -262,6 +262,27 @@
     gap: 0.5rem 1rem;
   }
 
+  .site-footer {
+    text-align: center;
+    padding-block: 2rem;
+    display: grid;
+    gap: 2rem;
+    background-color: var(--background-dark);
+
+    a {
+      color: var(--text-high-contrast);
+    }
+
+     a:hover, a:focus-visible {
+      color: var(--text-brand-light);
+    }
+  }
+  .site-footer__title {
+    font-size: var(--font-size-lg);
+    font-family: var(--ff-heading);
+    font-weight: 700;
+  }
+
   .hero {
     text-align: center;
     font-size: var(--font-size-md);
@@ -295,6 +316,24 @@
   .card__title {
     font-size: var(--card-title-font-size, var(--font-size-heading-sm));
     color: var(--card-title-color, var(--text-brand));
+  }
+
+  .button {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    background-color: var(--background-accent-main);
+    font-family: var(--ff-heading);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    border-radius: var(--border-radius-md);
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--background-accent-light);
+      color: var(--text-high-contrast);
+    }
   }
 }
 
